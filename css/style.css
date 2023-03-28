@@ -46,13 +46,13 @@
     gap: 50px;
 }
 
-.grid-principal-col1 p {
+.texto-intro {
     color: var(--texto-cinza);
     font-size: 1.35rem;
     margin-bottom: 20px;
 }
 
-.grid-principal-col1 a {
+.primeiro-conteudo a {
     background-color: var(--botao-amarelo);
     color: #000;
     border-radius: 4px;
@@ -65,7 +65,7 @@
 
 /* SEGUNDO CONTEÚDO */
 .segundo-conteudo {
-    margin: 160px 0;
+    margin: 180px 0;
     color: #000;
 }
 
@@ -88,6 +88,7 @@
     font-size: 18px;
     color: #595959;
     margin-left: 15px;
+    margin-bottom: 20px;
 }
 
 .escolha h2 {
@@ -95,4 +96,45 @@
     font-size: 2rem;
     color: #111;
     font-weight: 600;
+}
+
+
+/* TERCEIRO CONTEUDO  */
+
+.terceiro-conteudo {
+    background-color: #000;
+    height: 900px;
+}
+
+.terceiro-conteudo p:first-child {
+    text-transform: uppercase;
+}
+
+.terceiro-conteudo a {
+    color: var(--detalhe-amarelo);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 60px;
+}
+
+.detalhes {
+    display: flex;
+    gap: 40px;  
+}
+
+.detalhes img {
+    max-width: 24px;
+}
+
+.detalhes h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.detalhes p {
+    font-family: 'roboto';
+    color: var(--texto-cinza);
+    font-size: 1rem;
+    line-height: 1.5;
 }
