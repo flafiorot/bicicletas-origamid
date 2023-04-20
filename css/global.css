@@ -3,6 +3,7 @@
     --texto-cinza: #B2B2B2;
     --botao-amarelo: #FFBF00;
     --bg-pretolight: #111;
+    --amarelo-hover: #ffa602;
 }
 
 body {
@@ -20,14 +21,40 @@ img {
     max-width: 100%;
 }
 
-h1 {
+h1, h2 {
     font-size: 4rem;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 30px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.texto-medio {
+    color: var(--texto-cinza);
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
 .amarelo {
     color: var(--detalhe-amarelo);
 }
 
+.botao {
+    background-color: var(--botao-amarelo);
+    color: #000;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 16px 32px;
+    text-transform: uppercase;
+  }
+  
+  .botao:hover {
+    background-color: var(--amarelo-hover);
+  }
