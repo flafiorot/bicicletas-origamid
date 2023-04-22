@@ -21,11 +21,18 @@ img {
     max-width: 100%;
 }
 
-h1, h2 {
+h1 {
     font-size: 4rem;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    color: #000;
+    font-size: 2rem;
+    font-family: "Roboto", serif;
+    font-weight: 500;
 }
 
 .container {
@@ -58,3 +65,16 @@ h1, h2 {
   .botao:hover {
     background-color: var(--amarelo-hover);
   }
+
+
+/* Titulos paginas internas */
+
+.titulo-bg {
+    background-color: #000;
+}
+
+.titulo-interna {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
