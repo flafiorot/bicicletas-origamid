@@ -3,6 +3,7 @@
 @import "home.css";
 @import "termos.css";
 @import "bicicletas.css";
+@import "seguros.css";
 
 /* HEADER */
 
@@ -240,25 +241,18 @@
 }
 
 @media (max-width: 600px) {
+  .primaria {
+    margin: 0 auto;
+    padding-top: 16px;
+  }
+
   .detalhes {
     flex-direction: column;
   }
+
 }
 
 @media (max-width: 520px) {
-  .header {
-    display: block;
-    text-align: center;
-  }
-
-  .primaria {
-    display: inline-block;
-  }
-  
-  .header-menu a {
-      padding: 5px 10px;
-      margin-top: 20px;
-  }
 
   .introducao-conteudo h1 {
     font-size: 1.5rem;
@@ -267,11 +261,5 @@
   .introducao-conteudo a {
     padding: 5px 10px;
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .header-menu {
-      gap: 10px;
   }
 }
