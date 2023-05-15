@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Entre em contato conosco!">
     <title>Contato | Bikcraft</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
     <header class="header-bg">
         <div class="header container">
             <a href="./">
-                <img src="img/bikcraft.svg" alt="Bikcraft">
+                <img src="img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
             </a>
             <nav class="primaria" aria-label="primaria">
                 <ul class="header-menu">
@@ -46,9 +48,10 @@
                         <li class="contato-email"><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
                         <li><a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a></li>
                         <li class="contato-tel"><a href="tel:+552199999999">+55 21 9999-9999</a></li>
-                        <li class="contato-redes"><a href=""><img src="./img/redes/instagram-p.svg" alt="Instagram"></a>
-                            <a href=""><img src="./img/redes/facebook-p.svg" alt="Facebook"></a>
-                            <a href=""><img src="./img/redes/youtube-p.svg" alt="Youtube"></a>
+                        <li class="contato-redes">
+                            <a href=""><img src="./img/redes/instagram-p.svg" width="32" height="32" alt="Instagram"></a>
+                            <a href=""><img src="./img/redes/facebook-p.svg" width="32" height="32" alt="Facebook"></a>
+                            <a href=""><img src="./img/redes/youtube-p.svg" width="32" height="32" alt="Youtube"></a>
                         </li>
                     </ul>
                 </div>
@@ -70,8 +73,8 @@
                             <label for="mensagem">Mensagem</label>
                             <textarea name="mensagem" id="mensagem" rows="6" placeholder="O que você precisa?"></textarea>
                         </div>
-                        <button class="botao col-2" href="./"  >Enviar Mensagem</button>
-                    </form>                   
+                        <button class="botao col-2" href="./">Enviar Mensagem</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -80,33 +83,35 @@
                 <h1>lojas locais<span class="amarelo">.</span></h1>
                 <div class="contato-locais-lojas">
                     <div class="contato-loja">
-                        <img src="./img/lojas/rj.jpg" alt="mapa loja no Rio de Janeiro">
+                        <img src="./img/lojas/rj.jpg" width="1120" height="520" alt="mapa loja no Rio de Janeiro">
                         <div class="loja-conteudo">
                             <h2>Rio de Janeiro</h2>
                             <ul>
                                 <li>Rua Ali Perto, 25<br>
-                                Rio de Janeiro - RJ</li>
+                                    Rio de Janeiro - RJ</li>
                                 <li><a href="mailto:rj@bikcraft.com">rj@bikcraft.com</a><br>
-                                <a href="tel:+552199999999">+55 21 9999-9999</a></li>
+                                    <a href="tel:+552199999999">+55 21 9999-9999</a>
+                                </li>
                             </ul>
                             <div class="horario">
-                                <img src="img/icones/horario.svg" alt="">
+                                <img src="img/icones/horario.svg" width="20" height="20" alt="Icone Relógio">
                                 <p>08-18h de seg à dom</p>
                             </div>
                         </div>
                     </div>
                     <div class="contato-loja">
-                        <img src="./img/lojas/sp.jpg" alt="mapa loja em São Paulo">
+                        <img src="./img/lojas/sp.jpg" width="1120" height="520" alt="mapa loja em São Paulo">
                         <div class="loja-conteudo">
                             <h2>São Paulo</h2>
                             <ul>
                                 <li>Rua Ali Perto, 25<br>
-                                São Paulo - SP</li>
+                                    São Paulo - SP</li>
                                 <li><a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a><br>
-                                <a href="tel:+551199999999">+55 11 9999-9999</a></li>
+                                    <a href="tel:+551199999999">+55 11 9999-9999</a>
+                                </li>
                             </ul>
                             <div class="horario">
-                                <img src="img/icones/horario.svg" alt="">
+                                <img src="img/icones/horario.svg" width="20" height="20" alt="Icone Relógio">
                                 <p>08-18h de seg à dom</p>
                             </div>
                         </div>
@@ -118,7 +123,7 @@
 
     <footer class="footer">
         <div class="wrapper-contato container">
-            <img src="img/bikcraft.svg" alt="Logotipo Bikcraft">
+            <img src="img/bikcraft.svg" width="136" height="32" alt="Logotipo Bikcraft">
             <div class="contato">
                 <h4>Contato</h4>
                 <ul class="lista lista-contato">
@@ -126,9 +131,9 @@
                     <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
                     <li>Rua Ali Perto, 42 - Botafogo</li>
                     <li>Rio de Janeiro - RJ</li>
-                    <li><a href=""><img src="./img/redes/instagram.svg" alt="Instagram"></a>
-                        <a href=""><img src="./img/redes/facebook.svg" alt="Facebook"></a>
-                        <a href=""><img src="./img/redes/youtube.svg" alt="Youtube"></a>
+                    <li><a href=""><img src="/img/redes/instagram.svg" width="32" height="32" alt="Instagram"></a>
+                        <a href=""><img src="/img/redes/facebook.svg" width="32" height="32" alt="Facebook"></a>
+                        <a href=""><img src="/img/redes/youtube.svg" width="32" height="32" alt="Youtube"></a>
                     </li>
                 </ul>
             </div>
@@ -147,5 +152,7 @@
         </div>
     </footer>
 
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
