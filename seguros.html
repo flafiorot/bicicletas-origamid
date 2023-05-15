@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Veja nossas opções de seguros!">
     <title>Seguros | Bikcraft</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
     <header class="header-bg">
         <div class="header container">
             <a href="./">
-                <img src="img/bikcraft.svg" alt="Bikcraft">
+                <img src="img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
             </a>
             <nav class="primaria" aria-label="primaria">
                 <ul class="header-menu">
@@ -36,29 +38,29 @@
             </div>
             <div class="seguros-wrapper container">
                 <div class="seguros-planos">
-                    <div class="plano-prata planos">
+                    <div class="plano-prata planos fadeInLeft" data-anime="200">
                         <p class="plano-titulo">Prata</p>
-                        <span class="preco">R$ 199<span class="plano-tipo">mensal</span></span>    
+                        <span class="preco">R$ 199<span class="plano-tipo">mensal</span></span>
                         <ul class="itens-plano">
                             <li>Duas trocas por ano</li>
                             <li>Assistência técnica</li>
                             <li>Suporte 08h às 18h</li>
                             <li>Cobertura estadual</li>
                         </ul>
-                        <a class="botao inscreva" href="/">Inscreva-se</a>
+                        <a class="botao inscreva" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
                     </div>
-                    <div class="plano-ouro planos">
+                    <div class="plano-ouro planos fadeInRight" data-anime="400">
                         <p>Ouro</p>
                         <span class="preco">R$ 299<span class="plano-tipo">mensal</span></span>
                         <ul class="itens-plano">
-                            <li>Cinco  trocas por ano</li>
+                            <li>Cinco trocas por ano</li>
                             <li>Assistência especial</li>
                             <li>Suporte 24h</li>
                             <li>Cobertura nacional</li>
                             <li>Desconto em parceiros</li>
                             <li>Acesso ao Clube Bikcraft</li>
                         </ul>
-                        <a class="botao inscreva" href="/">Inscreva-se</a>
+                        <a class="botao inscreva" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
                     </div>
                 </div>
             </div>
@@ -70,32 +72,32 @@
             <div class="container">
                 <ul class="vantagens-itens">
                     <li>
-                        <img src="/img/icones/eletrica.svg" alt="">
+                        <img src="/img/icones/eletrica.svg" width="32" height="32" alt="Icone Eletrica">
                         <h3>Reparo Elétrico</h3>
                         <p>Garantimos o reparo completo do seu motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra.</p>
                     </li>
                     <li>
-                        <img src="/img/icones/carbono.svg" alt="">
+                        <img src="/img/icones/carbono.svg" width="32" height="32" alt="Icone Ondas">
                         <h3>Carbono</h3>
                         <p>Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar.</p>
                     </li>
                     <li>
-                        <img src="/img/icones/sustentavel.svg" alt="">
+                        <img src="/img/icones/sustentavel.svg" width="32" height="32" alt="Icone Folha">
                         <h3>Sustentável</h3>
                         <p>Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto.</p>
                     </li>
                     <li>
-                        <img src="/img/icones/rastreador.svg" alt="">
+                        <img src="/img/icones/rastreador.svg" width="32" height="32" alt="Icone Alvo">
                         <h3>Rastreador</h3>
                         <p>Utilizamos o GPS da sua Bikcraft em conjunto com especialistas em segurança para efetuarmos a recuperação.</p>
                     </li>
                     <li>
-                        <img src="/img/icones/seguro.svg" alt="">
+                        <img src="/img/icones/seguro.svg" width="32" height="32" alt="Icone Cadeado">
                         <h3>Segurança</h3>
                         <p>Com o seguro Bikcraft você pode ficar tranquilo em saber que o seu dinheiro não será perdido em casos de roubo.</p>
                     </li>
                     <li>
-                        <img src="/img/icones/velocidade.svg" alt="">
+                        <img src="/img/icones/velocidade.svg" width="32" height="32" alt="Icone Velocimetro">
                         <h3>Rapidez</h3>
                         <p>A sua Bikcraft ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</p>
                     </li>
@@ -106,28 +108,28 @@
             <h1>perguntas frequentes<span class="amarelo">.</span></h1>
             <dl>
                 <div class="perguntas-lista">
-                    <dt>Qual forma de pagamento vocês aceitam?</dt>
-                    <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                    <dt><button aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+                    <dd id="pergunta1" class="ativa">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                 </div>
                 <div class="perguntas-lista">
-                    <dt>Como posso entrar em contato?</dt>
-                    <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                    <dt><button aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+                    <dd id="pergunta2">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                 </div>
                 <div class="perguntas-lista">
-                    <dt>Vocês possuem algum desconto?</dt>
-                    <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                    <dt><button aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+                    <dd id="pergunta3">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                 </div>
                 <div class="perguntas-lista">
-                    <dt>Qual a garantia que possuo?</dt>
-                    <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                    <dt><button aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+                    <dd id="pergunta4">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                 </div>
                 <div class="perguntas-lista">
-                    <dt>Posso parcelar no boleto?</dt>
-                    <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                    <dt><button aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+                    <dd id="pergunta5">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                 </div>
                 <div class="perguntas-lista">
-                    <dt>Quantas trocas posso fazer ao ano?</dt>
-                    <dd>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+                    <dt><button aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+                    <dd id="pergunta6">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
                 </div>
             </dl>
 
@@ -136,7 +138,7 @@
 
     <footer class="footer">
         <div class="wrapper-contato container">
-            <img src="img/bikcraft.svg" alt="Logotipo Bikcraft">
+            <img src="img/bikcraft.svg" width="136" height="32" alt="Logotipo Bikcraft">
             <div class="contato">
                 <h4>Contato</h4>
                 <ul class="lista lista-contato">
@@ -144,9 +146,9 @@
                     <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
                     <li>Rua Ali Perto, 42 - Botafogo</li>
                     <li>Rio de Janeiro - RJ</li>
-                    <li><a href=""><img src="img/redes/instagram.svg" alt="Instagram"></a>
-                        <a href=""><img src="img/redes/facebook.svg" alt="Facebook"></a>
-                        <a href=""><img src="img/redes/youtube.svg" alt="Youtube"></a>
+                    <li><a href=""><img src="/img/redes/instagram.svg" width="32" height="32" alt="Instagram"></a>
+                        <a href=""><img src="/img/redes/facebook.svg" width="32" height="32" alt="Facebook"></a>
+                        <a href=""><img src="/img/redes/youtube.svg" width="32" height="32" alt="Youtube"></a>
                     </li>
                 </ul>
             </div>
@@ -165,5 +167,8 @@
         </div>
     </footer>
 
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

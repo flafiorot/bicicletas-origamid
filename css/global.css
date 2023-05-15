@@ -1,80 +1,105 @@
 :root {
-    --detalhe-amarelo: #FFBB00;
-    --texto-cinza: #B2B2B2;
-    --botao-amarelo: #FFBF00;
-    --bg-pretolight: #111;
-    --amarelo-hover: #ffa602;
+  --detalhe-amarelo: #ffbb00;
+  --texto-cinza: #b2b2b2;
+  --botao-amarelo: #ffbf00;
+  --bg-pretolight: #111;
+  --amarelo-hover: #ffa602;
 }
 
 body {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
-    display: inline-block;
+  display: inline-block;
 }
 
 img {
-    border-radius: 4px;
-    display: block;
-    max-width: 100%;
+  border-radius: 4px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 1.2;
-    padding-bottom: 30px;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-bottom: 30px;
 }
 
 h2 {
-    color: #000;
-    font-size: 2rem;
-    font-family: "Roboto", serif;
-    font-weight: 500;
+  color: #000;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .texto-medio {
-    color: var(--texto-cinza);
-    font-size: 1.35rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
+  color: var(--texto-cinza);
+  font-size: 1.35rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .amarelo {
-    color: var(--detalhe-amarelo);
+  color: var(--detalhe-amarelo);
 }
 
 .botao {
-    background-color: var(--botao-amarelo);
-    color: #000;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 1.125rem;
-    padding: 16px 32px;
-    text-transform: uppercase;
-  }
-  
-  .botao:hover {
-    background-color: var(--amarelo-hover);
-  }
+  background-color: var(--botao-amarelo);
+  color: #000;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
 
+.botao:hover {
+  background-color: var(--amarelo-hover);
+}
 
 /* Titulos paginas internas */
 
 .titulo-bg {
-    background-color: #000;
+  background-color: #000;
 }
 
 .titulo-interna {
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-bottom: 40px;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+/* Animação */
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.js .fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.js .fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
 }
